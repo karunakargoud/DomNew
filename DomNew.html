@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeContent(){
+            var h2DomElement=document.querySelector("#title");
+            h2DomElement.innerText="js is super easy";
+            h2DomElement.style.color="red";
+            var inputDomElement=document.querySelector("input");
+            inputDomElement.placeholder="User Name"
+
+        }
+        function fnBlue(){
+            var h2DomElement=document.querySelector("#title");
+            h2DomElement.style.color="blue";
+
+        }
+        function fnRed(){
+            var h2DomElement=document.querySelector("#title");
+            h2DomElement.style.color="Red";
+        }
+        function PasswordBox(){
+            var inputDomElement=document.querySelector("#box");
+            inputDomElement.type="password";
+
+        }
+    </script>
+</head>
+<body>
+    <h2 id="title" onmouseenter="fnBlue()" onmouseleave="fnRed()">QuerySelector</h2>
+    <input id="box" type="text" placeholder="enter text"/>
+    <button onclick="PasswordBox()">submit</button>
+</body>
+</html>
